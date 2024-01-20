@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>StickerConv: Generating Multimodal Empathetic Responses from Scratch</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">StickerConv: Generating Multimodal Empathetic Responses from Scratch</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://github.com/ZhangYiqun018" target="_blank">Yiqun Zhang</a><sup>1*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://github.com/friedrichor" target="_blank">Fanheng Kong</a><sup>1*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://github.com/Control-derek" target="_blank">Peidong Wang</a><sup>1*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://github.com/NanShanhai" target="_blank">Shuang Sun</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://github.com/WangLingS" target="_blank">LingShuai Wang</a><sup>1</sup></span>
+                  <br>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?hl=zh-CN&user=XjA2Le4AAAAJ" target="_blank">Shi Feng</a><sup>1†</sup>,</span>
+                  <span class="author-block">
+                    <a target="_blank">Daling Wang</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a target="_blank">Yifei Zhang</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a target="_blank">Kaisong Song</a><sup>2</sup></span>
+                  </div>
+
+                  <div class="is-size-6 publication-authors">
+                    <span class="author-block"><sup>*</sup>Equal Contribution</span> <sup>†</sup>Corresponding Author</span>
+                  </div>
+            
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>School of Computer Science and Engineering, Northeastern University, Shenyang, China</span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                     <span class="author-block"><sup>2</sup>Alibaba Group, Hangzhou, China</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/" target="_blank"
+                           class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                          </span>
+                          <span>Paper</span>
+                        </a>
+                      </span>
+                      <!-- Github link -->
+                      <span class="link-block">
+                        <a href="https://github.com/ZhangYiqun018/StickerChat" target="_blank"
+                           class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fab fa-github"></i>
+                          </span>
+                          <span>Code</span>
+                        </a>
+                      </span>
+                      <!-- Dataset link -->
+                      <span class="link-block">
+                        <a href="https://huggingface.co/datasets/NEUDM/StickerConv" target="_blank"
+                           class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fa fa-database"></i>
+                          </span>
+                          <span>Dataset</span>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Stickers, while widely recognized for enhancing empathetic communication in online interactions, remain underexplored
+            in current empathetic dialogue research. In this paper, we introduce the Agent for StickerConv (Agent4SC), which uses
+            collaborative agent interactions to realistically simulate human behavior with sticker usage, thereby enhancing multimodal
+            empathetic communication. Building on this foundation, we develop a multimodal empathetic dialogue dataset, StickerConv,
+            which includes 12.9K dialogue sessions, 5.8K unique stickers, and 2K diverse conversational scenarios, specifically
+            designs to augment the generation of empathetic responses in a multimodal context. To leverage the richness of this dataset,
+            we propose <b>PE</b>rceive and <b>G</b>enerate <b>S</b>tickers (PEGS), a multimodal empathetic response model, complemented by a
+            comprehensive set of empathy evaluation metrics based on LLM. Our experiments demonstrate PEGS's effectiveness in
+            generating contextually relevant and emotionally resonant multimodal empathetic responses, contributing to the advancement
+            of more nuanced and engaging empathetic dialogue systems.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-2">Technical Description</h2>
+      <br>
+    </div>
+    <!-- Agent -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h4 class="title is-3">• Agent for StickerConv (Agent4SC)</h4>
+
+        <div class="content has-text-justified">
+          <img class="columns is-centered has-text-centered" src="./static/images/Agent4SC.png"
+               alt="Teaser" width="95%"  style="margin:0 auto">
+          <br>
+          <figcaption>
+            <p style="text-align: center;">
+              <font color="061E61">
+                <b>Figure 1:</b> The Overview of Agent4SC.
+              </font>
+            </p>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dataset -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">• StickerConv</h2>
+
+        <div class="content has-text-justified">
+          <img class="columns is-centered has-text-centered" src="./static/images/StickerConv_example.png"
+               alt="Teaser" width="40%"  style="margin:0 auto">
+          <br>
+          <figcaption>
+            <p style="text-align: left;">
+              <font color="061E61">
+                <b>Figure 2:</b> An example of multimodal conversation in our StickerConv dataset.
+                Both parties can utilize the stickers to express their emotions, which enhances interactivity and expression.
+                Assistant can empathize with the user according to the conversation (<span style="color: rgb(0, 153, 0);">green</span> text).
+              </font>
+            </p>
+          </figcaption>
+
+          <br>
+          <img class="columns is-centered has-text-centered" src="./static/images/StickerConv_statistics.png"
+               alt="Teaser" width="50%"  style="margin:0 auto">
+          <br>
+          <figcaption>
+            <p style="text-align: center;">
+              <font color="061E61">
+                <b>Figure 3:</b> The statistics of StickerConv.
+              </font>
+            </p>
+          </figcaption>
+
+          <br>
+          <img class="columns is-centered has-text-centered" src="static/images/StickerConv_compare_user_system.png"
+               alt="Teaser" width="50%"  style="margin:0 auto">
+          <br>
+          <figcaption>
+            <p style="text-align: left;">
+              <font color="061E61">
+                <b>Figure 4:</b> The chart of emotional distribution in the choice of stickers between users and the system.
+                This chart revealed a striking trend: users have a significant preference for stickers that convey negative emotions,
+                in contrast to the system. The system predominantly utilizes stickers expressing neutral and positive emotions.
+                This comparison not only reflects the distinct emotional expression preferences between users and the system
+                but also highlights the system's active and supportive role in interactions.
+              </font>
+            </p>
+          </figcaption>
+        </div>
+        <br>
+
+        <div class="columns is-centered">
+          <div class="column  is-half">
+            <img class="columns is-centered has-text-centered" src="static/images/StickerConv_topic_emotion_dist.png"
+                 alt="Teaser" width="90%"  style="margin:0 auto">
+            <br>
+            <figcaption>
+              <p style="text-align: left;">
+                <font color="061E61">
+                  <b>Figure 5:</b> Emotion distribution of user profile in Agent for StickerConv.
+                </font>
+              </p>
+            </figcaption>
+          </div>
+
+          <div class="column  is-half">
+            <img class="columns is-centered has-text-centered" src="static/images/StickerConv_wordclound.png"
+                 alt="Teaser" width="90%"  style="margin:0 auto">
+            <br>
+            <figcaption>
+              <p style="text-align: left;">
+                <font color="061E61">
+                  <b>Figure 6:</b> The 200 most popular emotion-related words in StickerConv.
+                </font>
+              </p>
+            </figcaption>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PEGS -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">• PEGS</h2>
+
+        <div class="content has-text-justified">
+          <img class="columns is-centered has-text-centered" src="./static/images/PEGS.png"
+               alt="Teaser" width="80%"  style="margin:0 auto">
+          <br>
+          <figcaption>
+            <p style="text-align: left;">
+              <font color="061E61">
+                <b>Figure 8:</b> The overview architecture of PEGS.
+                The input images are jointly encoded by image encoder, Q-Former and a linear layer.
+                Vicuna is used as the language model.
+                To empower the language model to generate images,
+                the output of the LLM is first mapped into the input space of the image decoder through a feature mapper,
+                and then the frozen image decoder is employed to generate images.
+              </font>
+            </p>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-2">Results</h2>
+      <br>
+    </div>
+    <!-- Examples (Positive Emotion) -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+
+        <div class="content has-text-justified">
+          <img class="columns is-centered has-text-centered" src="static/images/results_case_positive.png"
+               alt="Teaser" width="95%"  style="margin:0 auto">
+          <br>
+          <figcaption>
+            <p style="text-align: left;">
+              <font color="061E61">
+                <b>Figure 9:</b> Examples of conversations with positive emotions.
+                Users can chat with multimodal content (text and stickers) and will receive positive multimodal responses.
+              </font>
+            </p>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+
+    <!-- Examples (Negative Emotion) -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+
+        <div class="content has-text-justified">
+          <img class="columns is-centered has-text-centered" src="static/images/results_case_negative.png"
+               alt="Teaser" width="95%"  style="margin:0 auto">
+          <br>
+          <figcaption>
+            <p style="text-align: left;">
+              <font color="061E61">
+                <b>Figure 10:</b> Examples of conversations with negative emotions.
+                Our model can empathize with users who are suffering from negative emotions, such as sadness (left) or anger (right) .
+                Users will be comforted and guided to positive sentiments.
+              </font>
+            </p>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+@misc{zhang2024stickerconv,
+  title={StickerConv: Generating Multimodal Empathetic Responses from Scratch},
+  author={Zhang, Yiqun and Kong, Fanheng and Wang, Peidong and Sun, Shuang and Wang, Lingshuai and Feng, Shi and Wang, Daling and Zhang, Yifei and Song, Kaisong},
+  url={https://github.com/ZhangYiqun018/StickerChat},
+  year={2024}
+}
+    </code></pre>
+  </div>
+</section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
