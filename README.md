@@ -6,10 +6,11 @@ This is the repository that contains the source code for the [StickerConv projec
 If you use StickerConv in your project, please kindly cite:
 
 ```
-@misc{zhang2024stickerconv,
+@article{zhang2024stickerconv,
   title={StickerConv: Generating Multimodal Empathetic Responses from Scratch},
   author={Zhang, Yiqun and Kong, Fanheng and Wang, Peidong and Sun, Shuang and Wang, Lingshuai and Feng, Shi and Wang, Daling and Zhang, Yifei and Song, Kaisong},
-  url={https://github.com/ZhangYiqun018/StickerChat},
+  journal={arXiv preprint arXiv:2402.01679},
+  url={https://arxiv.org/abs/2402.01679},
   year={2024}
 }
 ```
