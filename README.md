@@ -1,16 +1,15 @@
-# StickerConv
-## StickerConv: Generating Multimodal Empathetic Responses from Scratch
+# STICKERCONV
+## STICKERCONV: Generating Multimodal Empathetic Responses from Scratch
 
-This is the repository that contains the source code for the [StickerConv project page](https://neu-datamining.github.io/StickerConv/).
+This is the repository that contains the source code for the [STICKERCONV project page](https://neu-datamining.github.io/StickerConv/).
 
-If you use StickerConv in your project, please kindly cite:
+If you use STICKERCONV in your project, please kindly cite:
 
 ```
 @article{zhang2024stickerconv,
   title={StickerConv: Generating Multimodal Empathetic Responses from Scratch},
   author={Zhang, Yiqun and Kong, Fanheng and Wang, Peidong and Sun, Shuang and Wang, Lingshuai and Feng, Shi and Wang, Daling and Zhang, Yifei and Song, Kaisong},
   journal={arXiv preprint arXiv:2402.01679},
-  url={https://arxiv.org/abs/2402.01679},
   year={2024}
 }
 ```
